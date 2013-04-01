@@ -1,0 +1,15 @@
+<<html>
+<head>
+<title>My first web page</title>
+</head>
+<body>
+<center><h1>Welcome to my web page<h1></center>
+<hr>
+<br>
+<p>Hello and welcome to my first web site.</p>
+<b>These are my favorite links:<b><br>
+<ul>
+<li><a href="http://www.computerhope.com">Computer Hope</a></li>
+<li><a href="http://www.google.com">Google</a></li>
+</ul></body>
+</html>
