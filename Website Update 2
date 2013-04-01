@@ -3,11 +3,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <title>Whats onTap</title>
 
 <style type="text/css">
 h2 {
-  font:normal 1.2em/1.3em arial;
+	font:normal 1.2em/1.3em arial;
 	color:#B84300;
 	margin:0;
 	padding:0;
@@ -138,39 +139,63 @@ addLoadEvent(prepareBoxes);
 </head>
 <body background="beer-foam.jpg"> >
 
-<h1>Whats On Tap</h1>
-<p style="margin-bottom:50px;">Bars Joined</p>
+<center>
+<h1>
+<font COLOR="#F7F8E0" size="15">Whats On Tap</font>
+</p>
+</h1>
+</center>
+
+
 <ul>
+<center>
 <li class="linkbox">
-<h2>Beers On Tap For The 3 Bars</h2>
+<h2>Beers On Tap For The 3 Bars For Today</h2>
 <p></p>
 <p class="fullstory"><a href="Beersontap.html"</a></p>
 </li>
+</center>
 
+<center>
 <li class="linkbox">
 <h2>Billy Jack's</h2>
 <p></p>
 <p class="fullstory"><a href="http://billyjacksshack.com/">Full Story</a></p>
 </li>
+</center>
 
+<center>
+<li class="linkbox">
+<h2>Capital Ale House</h2>
+<p></p>
+<p class="fullstory"><a href="http://www.capitalalehouse.com/index.php">Full Story</a></p>
+</li>
+</center>
+
+
+<center>
 <li class="linkbox">
 <h2>Jack Browns</h2>
 <p></p>
 <p class="fullstory"><a href="http://www.jackbrownsjoint.com/home.html">Full Story</a></p>
 </li>
+</center>
 
-
+<center>
 <li class="linkbox">
 <h2>Daves Taverna</h2>
 <p></p>
 <p class="fullstory"><a href="http://www.davestaverna.com/">Full Story</a></p>
 </li>
+</center>
 
+<center>
 <li class="linkbox">
 <h2>Bar Login In Page</h2>
 <p></p>
 <p class="fullstory"><a href="barlogin.html">Full Story</a></p>
 </li>
+</center>
 
 
 </ul>
