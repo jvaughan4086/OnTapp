@@ -1,0 +1,33 @@
+#! /bin/env python
+import sys,string,os,tempfile
+import sqlite3
+import csv,subprocess
+
+import createHTMLtablePage.py
+
+filename = sys.argv[1]
+beforeTag=filename[:-4]
+
+
+dataTag="%s.db" % (beforeTag)
+
+csvData = open(filename, 'r')
+
+##
+con = sqlite3.connect(dataTag)
+with con:
+  cur = con.cursor()
+
+  cur.execute("DROP TABLE IF EXISTS OnTapp")
+  cur.execute("CREATE TABLE OnTapp (BEER TEXT, CATEGORY TEXT, DESCRIPTION TEXT, ABV TEXT, BREWED TEXT, PRICESmall TEXT, PRICELarge TEXT, PRICEGrowler TEXT);")
+  for i, l in enumerate(csvData):
+    x = l.split(",")
+    curExec="INSERT INTO OnTapp VALUES('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')" % (x[0], x[1], x[2], x[3], x[4], x[5], x[6], x[7])
+    cur.execute(curExec)
+
+
+con.commit()
+
+exeLine="'./createHTMLtablePage.py' '%s'" % (beforeTag)
+subprocess.call([exeLine])
+
